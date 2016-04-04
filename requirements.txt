@@ -1,1 +1,2 @@
-django==1.8.4
+django==1.9.5
+pillow==2.7.0
