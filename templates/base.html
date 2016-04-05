@@ -11,7 +11,50 @@
 
 </head>
 <body>
-{% block content %}
-{% endblock %}
+<header class="header">
+    <div class="container">
+         <div class="row">
+            <div class="col s12 m4 l4 header__logo">
+                НИИ урологии и интервенционной радиологии им. Н.А. Лопаткина
+            </div>
+            <div class="nav-wrapper col s12 m8 l8 header__ui__padding">
+                <ul class="hide-on-med-and-down header__ui__inline">
+                    <li><a href="#" class="header__ui__li__a__white">Нововсти</a></li>
+                    <li><a href="#" class="header__ui__li__a__white">Обучение</a></li>
+                    <li><a href="#" class="header__ui__li__a__white">Мероприятия</a></li>
+                    <li><a href="#" class="header__ui__li__a__white">Сотрудничество</a></li>
+                    <li><a href="#" class="header__ui__li__a__white">Контакты</a></li>
+                    <li>8(800)333-03-03</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container main__div__text">
+        <div class="row">
+            <div class="col s12">
+                НИИ урологии и интервенционной радиологии им. Н.А. Лопаткина - ведущий российский научно-эспериментальный,
+                методический и лечебный центр
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/materialize.min.js' %}"></script>
+<script src="{% static 'js/mine.js' %}"></script>
 </body>
 </html>
