@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    la
+    {% for new_info in news_list %}
+        {{ new_info.title }}
+        {{ new_info.content }}
+        {{ new_info.link }}
+        {{ new_info.date_published }}
+        {{ new_info.image }}
+    {% endfor %}
 {% endblock %}
