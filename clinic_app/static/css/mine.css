@@ -1,3 +1,4 @@
+/*header*/
 .header {
     background-color: #1383d7;
     color: white;
@@ -27,4 +28,76 @@
     color: #1383d7;
     text-align: center;
     font-size: 24px;
+    padding-bottom: 20px;
 }
+
+/*news*/
+
+.news {
+    position: relative;
+}
+
+.news__img {
+    height: 300px;
+    background: url("../img/doctors.jpg");
+    -webkit-filter: blur(15px);
+	filter: blur(15px);
+}
+
+.news__background__blue {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    height: 110%;
+    background-color: rgba(19, 131, 215, 0.4);
+}
+
+.news__slider {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.news__slider__height {
+    height: 250px !important;
+}
+
+.news__slider__ul__height {
+    height: 200px !important;
+}
+
+.news__slider__img {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.news__slider__text {
+    color: black !important;
+}
+
+/*slider color*/
+.slider .slides {
+     background-color: rgba(253, 248, 255, 0.6);
+}
+/**/
+
+/*slider view*/
+.slider .slides li .caption {
+    top: 0;
+    left: 1.2%;
+}
+/**/
+
+/*slider menu colour active*/
+.slider .indicators .indicator-item.active {
+    background-color: #1383d7;
+    border: none;
+}
+/**/
+
+/*slider menu color*/
+ .slider .indicators .indicator-item {
+     background-color: white;
+     border: 1px solid rgba(0,0,0,0.5);
+ }
+/**/
