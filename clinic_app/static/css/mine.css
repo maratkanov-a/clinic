@@ -111,7 +111,32 @@
 /**/
 
 /*slider menu color*/
- .slider .indicators .indicator-item {
-     background-color: white;
-     border: 1px solid rgba(0,0,0,0.5);
- }
+.slider .indicators .indicator-item {
+ background-color: white;
+ border: 1px solid rgba(0,0,0,0.5);
+}
+
+/* list news*/
+
+.list-news {
+    margin-top: 40px;
+}
+
+.list-news__title {
+    color: #0f67a7;
+}
+
+.a:hover{
+    background: url("../img/arrow-right.png");
+}
+.list-news__background__blue{
+    background: none;
+}
+
+.list-news__date {
+    color: black;
+}
+
+.la{
+    margin-top: 20px;
+}
