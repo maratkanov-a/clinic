@@ -140,3 +140,8 @@
 .la{
     margin-top: 20px;
 }
+
+.info__div__text__center__blue {
+    text-align: center;
+    color: #1383D6;
+}
