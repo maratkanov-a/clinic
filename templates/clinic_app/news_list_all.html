@@ -18,10 +18,9 @@
                 <div class="row ">
                     <ul class="slides news__slider__ul__height">
                         {% for new_info in news_list %}
-                            <li class="indicator-item">
+                            <li>
                                 <div class="col s12 m3 l3">
-                                    <img class="news__slider__img left"
-                                         src="{{ new_info.image.url }}">
+                                    <img class="news__slider__img left" src="{{ new_info.image.url }}">
                                 </div>
                                 <div class="col s12 m9 l9">
                                     <p class="news__slider__text__title">
