@@ -47,38 +47,11 @@
     {% block content %}
     {% endblock %}
 
-    <div class="info">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m4 l4 info__div__text__center__blue">
-                    <h4>
-                        40 единиц
-                    </h4>
-                    <p>
-                        современного оборудования
-                    </p>
-                </div>
-                <div class="col s12 m4 l4 info__div__text__center__blue">
-                    <h4>
-                        36 лет
-                    </h4>
-                    <p>
-                        успешной работы
-                    </p>
-                </div>
-                <div class="col s12 m4 l4 info__div__text__center__blue">
-                    <h4>
-                        9 отраслей
-                    </h4>
-                    <p>
-                        уронефрологии
-                    </p>
-                </div>
-            </div>
-        </div>
-        {% include 'clinic_app/timeline.html' %}
-        {% include 'clinic_app/labs_photos.html' %}
-    </div>
+    {% include 'clinic_app/info.html' %}
+    {% include 'clinic_app/events.html' %}
+    {% include 'clinic_app/learning.html' %}
+    {% include 'clinic_app/partners.html' %}
+    {% include 'clinic_app/location.html' %}
 
 </main>
 
