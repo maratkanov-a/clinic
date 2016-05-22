@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <div class="location">
     <div class="row location__uprow">
         <div class="container">
@@ -7,44 +8,38 @@
                 <span class="contacts__small_text">105425, Москва, ул. 3-я Парковая, 51</span>
                 <h6>Как добраться</h6>
 
-                <div class="map__zagluhka__da__mne__pohui__na__bem__ebaniy" style="width: 120px;
-                    height:150px;
-                    background-color: #004d40;
-                    margin-top: 10px;
-                    margin-left: 20px;">
+                <div class="location__picture__map">
+                    <img class="location__picture__map__size" src="{% static 'img/picture_map.png' %}" alt="">
                 </div>
                 <span class="contacts__small_text">С удовольствием ответим на Ваши вопросы</span>
             </div>
             <div class="col s12 m8 l8">
-                <div class="map__zagluhka__da__mne__pohui__na__bem__ebaniy" style="width: 450px;
-                    height:250px;
-                    background-color: #004d40;
-                    margin-top: 40px;
-                    margin-left: 20px;">
+                <div class="location__google__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.491233756537!2d37.778301315700205!3d55.80207179565878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b534c4bf2d1403%3A0xc9c4f66f8085aa2a!2z0J3QmNCYINGD0YDQvtC70L7Qs9C40Lgg0Lgg0LjQvdGC0LXRgNCy0LXQvdGG0LjQvtC90L3QvtC5INGA0LDQtNC40L7Qu9C-0LPQuNC4INC40LwuINCdLtCQLiDQm9C-0L_QsNGC0LrQuNC90LA!5e0!3m2!1sru!2s!4v1463947842184"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row location__downrow">
+    <div class="row location__feedback">
         <div class="container">
-            <div class="col s12 m4 l4" style="padding-top: 30px;">
-                <span class="contacts__small_text">Выберите любой удобный способ связаться с нами:</span>
-                <br><br>
-                <span class="contacts__small_text">По телефону:</span><span>+X(XXX)XXX-XX-XX</span>
-                <br>
-                <span class="contacts__small_text">По email:</span><span>XXX-XX-XX@yandex.ru</span>
-                <br>
-                <span class="contacts__small_text">Заполнив форму:</span>
+            <div class="col s12">
+                <h3 class="location__h3__position">
+                    Выберите любой удобный способ связаться с нами:
+                </h3>
             </div>
-            <div class="col s12 m8 l8">
-                <div class="forma__zagluhka__da__mne__pohui__na__bem__ebaniy" style="width: 450px;
-                    height:200px;
-                    background-color: #004d40;
-                    margin-top: 40px;
-                    margin-left: 20px;">
-                </div>
+            <div class="col s12 m6 l6 location__feedback__contacts__margin">
+                <a class="btn-floating btn-large waves-effect waves-light left"><i class="material-icons">phone</i></a>
+                <p class="left location__feedback__number__margin">
+                    +8(800)333-03-03
+                </p>
+            </div>
+            <div class="col s12 m6 l6 location__feedback__contacts__margin">
+                <a class="btn-floating btn-large waves-effect waves-light right"><i class="material-icons">email</i></a>
+                <p class="right location__feedback__email__margin">
+                    uro.otvet@mail.ru
+                </p>
             </div>
         </div>
     </div>
-    {#    <div class = "smth_to_test" style = "height: 300px; background-color: red">#}
 </div>
