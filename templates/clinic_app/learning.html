@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% load staticfiles %}
+<div class="learning" style="padding-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 learning__title">
+                Высококвалифицированные специалисты мирового уровня
+            </div>
+        </div>
+        <div class="row">
+            <div class="learning__label">
+                ОБУЧЕНИЕ
+            </div>
+        </div>
+        <div class="row learning__types">
+            <div class="col l4 m4 s12" align="center">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 align="center">30</h3>
 
-</body>
-</html>
+                        <p align="center">
+                            докторов <br> медицинских наук
+                        </p>
+                    </div>
+                    <div class="card-image">
+                        <img src="{% static 'img/doc_of_med.png' %}">
+                    </div>
+                </div>
+                <div class="card__low_button" style="padding-bottom: 10px;">
+                    ОРДИНАТУРА
+                </div>
+            </div>
+            <div class="col l4 m4 s12" align="center">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 align="center">50</h3>
+
+                        <p align="center">
+                            кандидатов <br> медицинских наук
+                        </p>
+                    </div>
+                    <div class="card-image">
+                        <img src="{% static 'img/cand_of_med.png' %}">
+                    </div>
+
+                </div>
+                <div class="card__low_button">
+                    АСПИРАНТУРА
+                </div>
+            </div>
+            <div class="col l4 m4 s12" align="center">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 align="center">100</h3>
+
+                        <p align="center">
+                            научных <br>работников
+                        </p>
+                    </div>
+                    <div class="card-image">
+                        <img src="{% static 'img/science_of_med.png' %}">
+                    </div>
+
+
+                </div>
+                <div class="card__low_button">
+                    ДОКУМЕНТЫ
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
