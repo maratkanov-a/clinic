@@ -145,3 +145,27 @@
     text-align: center;
     color: #1383D6;
 }
+
+/*labs photos*/
+
+.header__text__center{
+    text-align: center;
+}
+
+.content__blue {
+    background-color: #1383D6;
+}
+
+.content__blue a {
+    color: white;
+}
+
+.hover__yellow:hover{
+     color: #E4A712;
+}
+
+.hover__yellow .content__blue:hover {
+     background-color: #E4A712;
+}
+
+/**/

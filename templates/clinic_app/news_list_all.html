@@ -17,27 +17,22 @@
             <div class="slider news__slider__height">
                 <div class="row ">
                     <ul class="slides news__slider__ul__height">
-                        <li>
-                            <div class="col s12 m3 l3">
-                                <img class="news__slider__img left"
-                                     src="{% static 'img/ofisnii-zdaniy-chelzbinska.jpg' %}">
-                            </div>
-                            <div class="col s12 m9 l9">
-                                <p class="news__slider__text__title">
-                                    Заголовок
-                                </p>
-                                <p class="news__slider__text__description">
-                                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                                    является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                                    безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
-                                    Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-                                    изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое
-                                    время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в
-                                    более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
-                                    которых используется Lorem Ipsum.
-                                </p>
-                            </div>
-                        </li>
+                        {% for new_info in news_list %}
+                            <li class="indicator-item">
+                                <div class="col s12 m3 l3">
+                                    <img class="news__slider__img left"
+                                         src="{{ new_info.image.url }}">
+                                </div>
+                                <div class="col s12 m9 l9">
+                                    <p class="news__slider__text__title">
+                                        {{ new_info.title }}
+                                    </p>
+                                    <p class="news__slider__text__description">
+                                        {{ new_info.content }}
+                                    </p>
+                                </div>
+                            </li>
+                        {% endfor %}
                     </ul>
 
                 </div>
@@ -47,46 +42,17 @@
     <div class="list-news">
         <div class="row">
             <div class="container">
+                {% for el in header_news %}
                 <a class="list-news__background__blue"  href="#">
                     <div class="col s12 m2 l2 list-news__date la">
-                        25.05.2016
+                        {{ el.date_published|date:'d.m.Y' }}
                     </div>
                     <div class="col s12 m4 l4 list-news__title la">
-                        Рейтинг столичных медицинских учреждений будет открытым
+                        {{ el.title }}
                     </div>
                 </a>
-                <a class="list-news__background__blue"  href="#">
-                    <div class="col s12 m2 l2 list-news__date la">
-                        26.05.2016
-                    </div>
-                    <div class="col s12 m4 l4 list-news__title la">
-                        Рейтинг столичных медицинских учреждений будет закрытым
-                    </div>
-                </a>
-                <a class="list-news__background__blue"  href="#">
-                    <div class="col s12 m2 l2 list-news__date la">
-                        26.05.2016
-                    </div>
-                    <div class="col s12 m4 l4 list-news__title la">
-                        Рейтинг столичных медицинских учреждений будет закрытым
-                    </div>
-                </a>
-                <a class="list-news__background__blue" href="#">
-                    <div class="col s12 m2 l2 list-news__date la">
-                        26.05.2016
-                    </div>
-                    <div class="col s12 m4 l4 list-news__title la">
-                        Рейтинг столичных медицинских учреждений будет закрытым
-                    </div>
-                </a>
+                {% endfor %}
             </div>
         </div>
     </div>
-    {% for new_info in news_list %}
-        {{ new_info.title }}
-        {{ new_info.content }}
-        {{ new_info.link }}
-        {{ new_info.date_published }}
-        {{ new_info.image }}
-    {% endfor %}
 {% endblock %}
