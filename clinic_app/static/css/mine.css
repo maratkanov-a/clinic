@@ -316,6 +316,10 @@
     cursor: pointer;
 }
 
+.partners__container {
+    text-align: center;
+}
+
 .partners__big_circle img {
     width: 180px;
     height: 180px;
@@ -366,7 +370,6 @@
     width: 130px;
     height: 130px;
     border: 2px solid #1383d7;
-    margin: 5% auto 5% 35px;
 }
 
 .partners__picture {
@@ -374,11 +377,8 @@
     margin-top: 60px;
 }
 
-.partners__picture__desc {
+.partners__picture__text__white {
     color: white;
-    position: absolute;
-    top: 160px;
-    left: 62px;
 }
 
 .container {
